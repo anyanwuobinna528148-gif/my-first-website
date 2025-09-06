@@ -4,14 +4,17 @@
     <title>About Me</title>
     <style>
       body {
-        background-color: #fffaf0;
+        background-image: url('https://www.w3schools.com/w3images/forestbridge.jpg');
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
         font-family: Arial, sans-serif;
         text-align: center;
         margin: 0;
         padding: 0;
       }
       header {
-        background-color: darkgreen;
+        background-color: rgba(0, 100, 0, 0.8); /* darkgreen with transparency */
         color: white;
         padding: 20px;
       }
@@ -30,6 +33,12 @@
       nav a:hover {
         color: lightgreen;
       }
+      .content {
+        background-color: rgba(255, 255, 255, 0.8);
+        padding: 20px;
+        margin: 20px;
+        border-radius: 10px;
+      }
       p {
         font-size: 18px;
         color: #333;
@@ -46,7 +55,9 @@
       </nav>
     </header>
 
-    <p>Hello, my name is Obinna. I am 20 years old and learning how to code!</p>
-    <p>This is my About page where I can tell people more about myself.</p>
+    <div class="content">
+      <p>Hello, my name is Obinna. I am 20 years old and learning how to code!</p>
+      <p>This is my About page where I can tell people more about myself.</p>
+    </div>
   </body>
 </html>
