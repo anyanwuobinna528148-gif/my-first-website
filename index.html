@@ -4,14 +4,17 @@
     <title>My First Website</title>
     <style>
       body {
-        background-color: #f0f8ff;
+        background-image: url('https://www.w3schools.com/w3images/forestbridge.jpg');
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
         font-family: Arial, sans-serif;
         text-align: center;
         margin: 0;
         padding: 0;
       }
       header {
-        background-color: darkblue;
+        background-color: rgba(0, 0, 139, 0.8); /* darkblue with transparency */
         color: white;
         padding: 20px;
       }
@@ -29,6 +32,12 @@
       }
       nav a:hover {
         color: lightgreen;
+      }
+      .content {
+        background-color: rgba(255, 255, 255, 0.8); /* transparent white box */
+        padding: 20px;
+        margin: 20px;
+        border-radius: 10px;
       }
       p {
         color: #333;
@@ -65,11 +74,13 @@
       </nav>
     </header>
 
-    <p>Hello! My name is Obinna, and this is my very first website built with HTML & CSS.</p>
+    <div class="content">
+      <p>Hello! My name is Obinna, and this is my very first website built with HTML & CSS.</p>
 
-    <img src="https://www.w3schools.com/html/img_girl.jpg" alt="Sample Image">
+      <img src="https://www.w3schools.com/html/img_girl.jpg" alt="Sample Image">
 
-    <p>Click below to visit Google:</p>
-    <a class="button" href="https://www.google.com" target="_blank">Go to Google</a>
+      <p>Click below to visit Google:</p>
+      <a class="button" href="https://www.google.com" target="_blank">Go to Google</a>
+    </div>
   </body>
 </html>
